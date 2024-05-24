@@ -1,0 +1,133 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: red;
+    background: linear-gradient(45deg, #c17777, #000000, #c17777);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s infinite;
+  }
+
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+      background-size: 200% 200%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .card {
+    width: 350px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; 
+  }
+
+  .card h1 {
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px; 
+  }
+
+  .card p {
+    font-family: 'Bradley Hand ITC', cursive;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+  }
+
+form label {
+    font-family: 'Bauhaus 93', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #3b0404;
+    border-radius: 6px;
+    background-color: black; 
+    color: red; 
+    font-family: 'Bradley Hand ITC', cursive
+}
+
+form input::placeholder,
+form select {
+    color: red; 
+}
+
+form input:hover,
+form select:hover {
+    border: 3px solid #750606; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b0404;
+    color: #ff0000;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Bradley Hand ITC', cursive
+}
+
+button:hover {
+    background-color: #7c1010;
+}
+
+.swal2-container .swal2-popup .swal2-actions button.swal2-confirm {
+    background-color: #3b0404;
+    color: #ff0000;
+    font-family: 'Bradley Hand ITC', cursive;
+}
+
+.swal2-container .swal2-popup .swal2-actions button.swal2-cancel {
+    background-color: #750606;
+    color: #ff0000;
+    font-family: 'Bradley Hand ITC', cursive;
+}
+
+.swal2-container .swal2-popup .swal2-actions button.swal2-confirm:hover {
+    background-color: #7c1010;
+}
+
+.swal2-container .swal2-popup .swal2-actions button.swal2-cancel:hover {
+    background-color: #3b0404;
+}
+
+.black-background {
+    background-color: black !important;
+    color: red !important;
+}
+
+.black-background .swal2-title,
+.black-background .swal2-html-container {
+    color: red !important;
+    font-family: 'Bauhaus 93', sans-serif !important;
+}
